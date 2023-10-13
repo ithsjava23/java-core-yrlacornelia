@@ -3,12 +3,11 @@ package org.example.warehouse;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Warehouse {
     private String name;
-    private ArrayList <ProductRecord> products;
-    private ArrayList <ProductRecord> changedProducts;
+    private final ArrayList <ProductRecord> products;
+    private final ArrayList <ProductRecord> changedProducts;
     private Warehouse(String name) {
         this.name = name;
         this.products = new ArrayList<>();
