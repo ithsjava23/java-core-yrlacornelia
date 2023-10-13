@@ -23,7 +23,7 @@ public class Warehouse {
     public static Warehouse getInstance() {
         return new Warehouse("defaultWarehouse");
     }
-
+//
     public boolean isEmpty() {
         return products.isEmpty();
     }
@@ -31,7 +31,6 @@ public List<ProductRecord> getProducts() {
     List<ProductRecord> list = new ArrayList<>(products);
     return Collections.unmodifiableList(list);
 }
-
 
 
     public ProductRecord addProduct(UUID uuidMilk, String milk, Category dairy, BigDecimal bigDecimal) {
@@ -89,8 +88,6 @@ public Map<Category, List<ProductRecord>> getProductsGroupedByCategories() {
         if (!productFound) {
             throw new IllegalArgumentException("Product with that id doesn't exist.");
         }
-
-
     }
     public List<ProductRecord> getChangedProducts() {
         return changedProducts;

@@ -2,7 +2,6 @@ package org.example.warehouse;
 import java.math.BigDecimal;
 import java.util.Objects;
 import java.util.UUID;
-///change to record later if needed
 public class ProductRecord {
     private final UUID uuid;
     private final String name;

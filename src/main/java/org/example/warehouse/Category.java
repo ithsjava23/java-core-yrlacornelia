@@ -17,12 +17,9 @@ public final class Category {
     }
 
     public static Category of(String name) {
-        // Check if name is null
         if (name == null) {
             throw new IllegalArgumentException("Category name can't be null");
         }
-
-        // Use the categoryMap to ensure the same instance is returned for the same name
         Category category = categoryMap.get(name);
         if (category == null) {
             String s1 = name.substring(0, 1).toUpperCase();
